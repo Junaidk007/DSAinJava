@@ -7,7 +7,7 @@ public class Creation {
         array[0][0] = 1;
         array[0][1] = 2;
         array[0][2] = 3;
-        array[0][3] = 4;
+        array[0][3] = 4;                    
 
         array[1][0] = 5;
         array[1][1] = 6;
