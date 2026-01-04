@@ -11,5 +11,6 @@ public class Main {
 
     public static void main(String[] args) {
         printNum(5);
+        System.out.println(124/100);
     }
 }

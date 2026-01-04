@@ -15,6 +15,7 @@ public class XpowN {
         if (n == 0) return 1;
 
         int half = exponent2(x, n/2);
+        System.out.println(half);
 
         if (n%2 == 0) { 
             return half * half; 
@@ -32,8 +33,9 @@ public class XpowN {
     }
 
     public static void main(String[] args) {
-        System.out.println(exponent1(2, 4));
-        System.out.println("------------------");
+        // System.out.println(exponent1(2, 4));
+        // System.out.println("------------------");
         System.out.println(exponent2(2, 4));
+        // exponent1(2, 4);
     }
 }
