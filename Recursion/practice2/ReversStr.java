@@ -1,4 +1,3 @@
-package Recursion.prac2;
 
 public class ReversStr {
     public static String revStr(String s, int i) {
