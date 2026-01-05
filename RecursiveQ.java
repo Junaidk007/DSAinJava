@@ -27,7 +27,7 @@ public class RecursiveQ {
     }
 
     // Count the no.of digits in number
-    public static int nOfDigits(int n) {
+    public static int nOfDigits(int n) {        
         if (n < 10) return 1;
 
         return 1 + nOfDigits(n/10);
@@ -64,14 +64,37 @@ public class RecursiveQ {
             return largest;
         }
     }
+
+    // Reverse a string
+    public static String revString(String s) {
+        if (s.length() <= 1) return s;
+        return revString(s.substring(1)) + s.charAt(0);
+
+        // revString(abcd) == dcb + a
+        // revString(bcd) == dc + b
+        // revString(cd) == d + c
+        // revString(d) == '' + d
+        // revString() == ""
+    }
+
+    // Palindrome Check
+    public static boolean checkPalindrom(String s) {
+        if (s.length() <= 1) return true;
+
+        if (s.charAt(0) != s.charAt(s.length()-1)) return false;
+
+        return checkPalindrom(s.substring(1,s.length() - 1));
+    }
     
     public static void main(String[] args) {
         // printNum(5);
         // printN(4);
         // System.out.println(sumOfNum(4));
-        // System.out.println(nOfDigits(1000));
+        // System.out.println(nOfDigits(0));
         int[] arr = {1, 2, 4, 8, 3};
         // System.out.println(isArrSorted(arr, 0));
-        System.out.println(isLargeAr(arr, 0));;
+        // System.out.println(isLargeAr(arr, 0));
+        // System.out.println(revString("abcd"));
+        System.out.println(checkPalindrom("noon"));
     }
 }
